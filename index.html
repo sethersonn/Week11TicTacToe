@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+    <br>
+
+
+    <!--Create a title for game and show player turn-->
+    <div class="container text-center">
+        <h1 class="card bg-danger">Tic Tac Toe</h1>
+        <br>
+        <h2 class="card bg-primary" id="playerturn">It's X's Turn!</h2>
+        <br>
+    </div>
+
+    <!--Create a Grid-->
+
+    <div style="max-width: 400px;" class="container text-center m-auto p-3 g-5">
+        <div class="row">
+            <!--Assign id grid to each box in the grid to grab later-->
+            <div class="col border-bottom border-end p-5" id="grid0">
+            </div>
+            <div class="col border-bottom border-end p-5" id="grid1">
+            </div>
+            <div class="col border-bottom p-5" id="grid2">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border-bottom border-end p-5" id="grid3">
+            </div>
+            <div class="col border-bottom border-end p-5" id="grid4">
+            </div>
+            <div class="col border-bottom p-5" id="grid5">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border-end p-5" id="grid6">
+            </div>
+            <div class="col border-end p-5" id="grid7">
+            </div>
+            <div class="col p-5" id="grid8">
+            </div>
+        </div>
+        <br>
+
+        <!--Button to restart the game-->
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button id="startBtn" class="btn btn-primary" type="button">Start the Game!</button>
+            <button id="restartBtn" class="btn btn-danger" type="button">Restart the Game?</button>
+        </div>
+
+        <br>
+        <!--Bootstrap alert-->
+        <div style="background-color: #6f42c1" id="alertStart" class="alert text-center m-0 ms-5 me-5 fs-3"
+            role="alert">
+            Game Start!
+        </div>
+
+        <div style="background-color: #6f42c1" id="alertWinner" class="alert text-center m-0 ms-5 me-5 fs-3"
+            role="alert">
+
+        </div>
+
+        <div style="background-color: #6f42c1" id="alertDraw" class="alert text-center m-0 ms-5 me-5 fs-3" role="alert">
+            Womp Womp, it's a draw!
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
