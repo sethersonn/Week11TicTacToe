@@ -102,7 +102,7 @@ $('#startBtn').on('click', function () {
     players.reset(); //reset players using the class method
     $('#alertStart').show();
     $('#alertWinner').hide();
-    $('alertDraw').hide();
+    $('#alertDraw').hide();
     $('#playerturn').text("It's X's Turn!")
 });
 
@@ -113,7 +113,7 @@ $('#restartBtn').on('click', function () {
     players.reset(); //reset players using the class method
     $('#alertStart').show();
     $('#alertWinner').hide();
-    $('alertDraw').hide();
+    $('#alertDraw').hide();
     $('#playerturn').text("It's X's Turn!")
 })
 
